@@ -18,5 +18,13 @@
     <ClCompile Include="Ch 11 hw 1- Roman Numerals.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RomanType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RomanType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

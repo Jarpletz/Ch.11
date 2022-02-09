@@ -140,6 +140,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Ch 11 hw 1- Roman Numerals.cpp" />
+    <ClCompile Include="RomanType.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RomanType.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
