@@ -2,6 +2,8 @@
 #include <string>
 #include<cstdlib>
 #include "Student.h"
+#include "Trimester.h"
+#include "Teacher.h"
 using namespace std;
 
 bool requestRepeat();
@@ -11,22 +13,13 @@ int main()
     
     cout << "Student Random Homework Grade Generator" << endl << endl;
 
-    string firstName, lastName;
-    int studentID;
+    Teacher teacher;
 
-    cout << "Student's First Name: ";
-    cin >> firstName;
-    cout << "Student's Last Name: ";
-    cin >> lastName;
-    cout << "Student's ID #: ";
-    cin >> studentID;
+    teacher.inputTrimesterInfo();
 
-    Student student(firstName, lastName, studentID);
-    
     bool generateAgain = true;
-
     while (generateAgain) {
-        student.CalculateNewGrade();
+        teacher.printTrimesterInfo();
 
        generateAgain= requestRepeat();
     }
@@ -34,7 +27,7 @@ int main()
 }
 
 bool requestRepeat() {
-     cout << "Generate New Grade? (Y/N):";
+     cout << "Generate New Grades? (Y/N):";
     char choice;
     cin >> choice;
     switch (toupper(choice))

@@ -11,9 +11,7 @@ Student ::Student() {
 	numbComplete = 0;
 }
 Student::Student(string firstName, string lastName, int ID) {
-	first = firstName;
-	last = lastName;
-	id = ID;
+	SetNewName(firstName, lastName, ID);
 	result = " ";
 	numbForgot = 0;
 	numbIncomplete = 0;
@@ -21,6 +19,12 @@ Student::Student(string firstName, string lastName, int ID) {
 }
 //Destructor- Do I need this to do anything?
 Student:: ~Student() {}
+
+void Student::SetNewName(string firstName, string lastName, int ID) {
+	first = firstName;
+	last = lastName;
+	id = ID;
+}
 
 void Student::OuputGrade() const {
 	if (result == "Forgot") {

@@ -141,9 +141,13 @@
   <ItemGroup>
     <ClCompile Include="Ch 11 Test.cpp" />
     <ClCompile Include="Student.cpp" />
+    <ClCompile Include="Teacher.cpp" />
+    <ClCompile Include="Trimester.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Student.h" />
+    <ClInclude Include="Teacher.h" />
+    <ClInclude Include="Trimester.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
